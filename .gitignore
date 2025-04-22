@@ -1,0 +1,42 @@
+# macOS ile ilgili dosyalar
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode ile ilgili dosyalar
+xcuserdata/
+*.xcscmblueprint
+*.xcworkspace
+
+# Swift Package Manager (SPM) ile ilgili dosyalar
+.build/
+Packages/
+DerivedData/
+
+# CocoaPods ile ilgili dosyalar
+Pods/
+Podfile.lock
+
+# Carthage ile ilgili dosyalar
+Carthage/Checkouts
+Carthage/Build
+
+# SwiftPM ile ilgili dosyalar
+/.swiftpm/
+/.build/
+
+# Fastlane ile ilgili dosyalar
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Kullanıcı ayar dosyaları
+*.xcuserstate
+
+# Playgrounds ile ilgili dosyalar
+timeline.xctimeline
+playground.xcworkspace
+
+# Git özellikleri
+.git/
