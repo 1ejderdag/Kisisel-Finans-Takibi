@@ -1,18 +1,36 @@
-//
-//  InputView.swift
-//  Kisisel-Finans-Takibi
-//
-//  Created by Ejder Dağ on 22.04.2025.
-//
 
 import SwiftUI
 
 struct InputView: View {
+    
+    @Binding var amount: String
+    let title: String
+    let placeholder: String
+    var isSecureField = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 12) {
+
+            Text(title)
+                .font(.system(size: 20))
+                .fontWeight(.semibold)
+                .foregroundStyle(Color(.darkGray))
+            
+            if isSecureField {
+                SecureField(placeholder, text: $amount)
+                    .font(.system(size: 14))
+                    
+            } else {
+                TextField(placeholder, text: $amount)
+                    .font(.system(size: 14))
+                    .textCase(.none)
+                    
+            }
+        }
+        .padding()
     }
 }
 
-#Preview {
-    InputView()
-}
+//#Preview {
+//    InputView()
+//}
