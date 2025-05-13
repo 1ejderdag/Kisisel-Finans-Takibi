@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0858F02DCF8A0900183103 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0858EF2DCF8A0900183103 /* GoogleGenerativeAI */; };
 		3A8AF4752DB7E88E00EC330A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8AF4742DB7E88E00EC330A /* FirebaseAuth */; };
 		3A8AF4772DB7E88E00EC330A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8AF4762DB7E88E00EC330A /* FirebaseCore */; };
 		3A8AF4792DB7E88E00EC330A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8AF4782DB7E88E00EC330A /* FirebaseFirestore */; };
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0858F02DCF8A0900183103 /* GoogleGenerativeAI in Frameworks */,
 				3A8AF4772DB7E88E00EC330A /* FirebaseCore in Frameworks */,
 				3A8AF47B2DB7E88E00EC330A /* FirebaseStorage in Frameworks */,
 				3A8AF4752DB7E88E00EC330A /* FirebaseAuth in Frameworks */,
@@ -80,6 +82,7 @@
 				3A8AF4762DB7E88E00EC330A /* FirebaseCore */,
 				3A8AF4782DB7E88E00EC330A /* FirebaseFirestore */,
 				3A8AF47A2DB7E88E00EC330A /* FirebaseStorage */,
+				3A0858EF2DCF8A0900183103 /* GoogleGenerativeAI */,
 			);
 			productName = "Kisisel-Finans-Takibi";
 			productReference = 3A23FA742D9AF33D003936A9 /* Kisisel-Finans-Takibi.app */;
@@ -111,6 +114,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				3A8AF4732DB7E88E00EC330A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3A0858EE2DCF8A0900183103 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A23FA752D9AF33D003936A9 /* Products */;
@@ -342,6 +346,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3A0858EE2DCF8A0900183103 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
 		3A8AF4732DB7E88E00EC330A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -353,6 +365,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A0858EF2DCF8A0900183103 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A0858EE2DCF8A0900183103 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
 		3A8AF4742DB7E88E00EC330A /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3A8AF4732DB7E88E00EC330A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
